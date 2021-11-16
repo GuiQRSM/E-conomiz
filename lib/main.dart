@@ -38,7 +38,10 @@ class _HomeStateFulState extends State<HomeStateFul> {
 
   void _callContent() {
     var randomContent = Random().nextInt(_content.length);
-    _text = _content[randomContent];
+
+    setState(() {
+      _text = _content[randomContent];
+    });
   }
 
   @override
@@ -72,11 +75,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
                 ),
               ),
               RaisedButton(
-                onPressed: (){
-                  setState(() {
-                    _text = "Welcome to E-conomiz Beta";
-                  });
-                },
+                onPressed: (){},
                 color: primeColor,
                 child: Text(
                   "Clique Aqui!",

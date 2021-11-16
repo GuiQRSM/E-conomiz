@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() {
 
@@ -22,9 +23,24 @@ class HomeStateFul extends StatefulWidget {
 }
 
 const primeColor = Color.fromARGB(100, 98, 0, 238);
-var _text = "Test Content!";
+
 
 class _HomeStateFulState extends State<HomeStateFul> {
+
+  var _content = [
+    "Pesquise preços sem sair de casa!",
+    "Monte sua lista de compras direto no app.",
+    "Atualização de preços, da sua lista automatica!",
+    "Compartilhe os melhores preços."
+  ];
+
+  var _text = "Test Content!";
+
+  void _callContent() {
+    var randomContent = Random().nextInt(_content.length);
+    _text = _content[randomContent];
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +59,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
                 "E-conomiz",
                 style: TextStyle(
                   fontSize: 30,
-                  fontWeight: FontWeight.w300,
+                  fontWeight: FontWeight.w400,
                   color: primeColor,
                 ),
               ),

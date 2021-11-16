@@ -32,53 +32,55 @@ class _HomeStateFulState extends State<HomeStateFul> {
         title: Text("E-conomiz"),
         backgroundColor: primeColor,
       ),
-      body: Padding(
-        padding: EdgeInsets.all(16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              "E-conomiz",
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.w300,
-                color: primeColor,
+      body: Container(
+        width: double.infinity,
+        child: Padding(
+          padding: EdgeInsets.all(17),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                "E-conomiz",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w300,
+                  color: primeColor,
+                ),
               ),
-            ),
-            Text(
-              "Coming Soon!",
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w700,
-                color: Colors.purple,
+              Text(
+                "Coming Soon!",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.purple,
+                ),
               ),
-            ),
-            RaisedButton(
+              RaisedButton(
                 onPressed: (){
                   setState(() {
                     _text = "Welcome to E-conomiz Beta";
                   });
                 },
-              color: primeColor,
-              child: Text(
+                color: primeColor,
+                child: Text(
                   "Clique Aqui!",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.white,
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-            ),
-            Text(
+              Text(
                 "$_text",
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w700,
-                color: primeColor,
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                  color: primeColor,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(

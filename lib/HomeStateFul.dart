@@ -52,12 +52,14 @@ class _HomeStateFulState extends State<HomeStateFul> {
                   color: primeColor,
                 ),
               ),
-              Text(
-                "Coming Soon!",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.purple,
+              GestureDetector(
+                child: Text(
+                  "Coming Soon!",
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.purple,
+                  ),
                 ),
               ),
               RaisedButton(

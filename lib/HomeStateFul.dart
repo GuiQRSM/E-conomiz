@@ -53,6 +53,9 @@ class _HomeStateFulState extends State<HomeStateFul> {
                 ),
               ),
               GestureDetector(
+                onTap: (){print("Clique Unico!");},
+                onDoubleTap: (){print("Dois cliques!");},
+                onLongPress: (){print("Clique longo!");},
                 child: Text(
                   "Coming Soon!",
                   style: TextStyle(

@@ -33,6 +33,14 @@ class _HomeStateFulState extends State<HomeStateFul> {
 var _dinamicImage = AssetImage("imagens/Adeconomiz.png");
 var _secretImage = AssetImage("imagens/E-conomiz.png");
 
+void callSecretImage() {
+
+  Image(
+    image: this._secretImage,
+  height: 90,);
+
+}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -31,6 +31,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
   }
 
 var _dinamicImage = AssetImage("imagens/Adeconomiz.png");
+var _secretImage = AssetImage("imagens/E-conomiz.png");
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +47,6 @@ var _dinamicImage = AssetImage("imagens/Adeconomiz.png");
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-
           Padding(
           padding: EdgeInsets.only(bottom: 16, top: 16),
             child: Text(

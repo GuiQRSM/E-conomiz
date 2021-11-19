@@ -62,10 +62,10 @@ void _callSecretImage() {
           Padding(
           padding: EdgeInsets.only(bottom: 16, top: 16),
             child: Text(
-              "E-conomiz",
+              "E-conomiz(Fresh version)",
               style: TextStyle(
                 fontSize: 30,
-                fontWeight: FontWeight.w400,
+                fontWeight: FontWeight.w700,
                 color: primeColor,
               ),
             ),
@@ -74,7 +74,7 @@ void _callSecretImage() {
                 onLongPress: () => _callSecretImage(),
                 child: Image(
                   image: this._dinamicImage,
-                height: 90,),
+                height: 100,),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 16),

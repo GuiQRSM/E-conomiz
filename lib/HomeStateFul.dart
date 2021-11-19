@@ -33,11 +33,15 @@ class _HomeStateFulState extends State<HomeStateFul> {
 var _dinamicImage = AssetImage("imagens/Adeconomiz.png");
 var _secretImage = AssetImage("imagens/E-conomiz.png");
 
-void callSecretImage() {
+void _callSecretImage() {
 
   Image(
     image: this._secretImage,
-  height: 90,);
+  height: 150,);
+
+  setState(() {
+    _dinamicImage = _secretImage;
+  });
 
 }
 
@@ -67,10 +71,10 @@ void callSecretImage() {
             ),
            ),
               GestureDetector(
-                onLongPress: ,
+                onLongPress: () => _callSecretImage(),
                 child: Image(
                   image: this._dinamicImage,
-                height: 60,),
+                height: 90,),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 16),

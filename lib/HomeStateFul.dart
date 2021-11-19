@@ -30,7 +30,6 @@ class _HomeStateFulState extends State<HomeStateFul> {
     });
   }
 
-
 var _imageSecret = AssetImage("imagens/Adeconomiz.png");
 
   @override
@@ -60,14 +59,9 @@ var _imageSecret = AssetImage("imagens/Adeconomiz.png");
             ),
            ),
               GestureDetector(
-                child: Text(
-                  "Coming Soon!",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.purple,
-                  ),
-                ),
+                child: Image(
+                  image: this._imageSecret,
+                height: 60,),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 16),

@@ -31,7 +31,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
   }
 
 
-
+var _imageSecret = AssetImage("imagens/Adeconomiz.png");
 
   @override
   Widget build(BuildContext context) {

@@ -63,7 +63,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
             //child: Image(image: ""),
           ),
               GestureDetector(
-                onLongPress: (){print("Clique longo!");},
+                onLongPress: () => _callEasterEgg("comandoON"),
                 child: Text(
                   "Coming Soon!",
                   style: TextStyle(

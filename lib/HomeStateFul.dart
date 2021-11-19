@@ -52,18 +52,23 @@ class _HomeStateFulState extends State<HomeStateFul> {
                   color: primeColor,
                 ),
               ),
+          Padding(
+          padding: EdgeInsets.only(bottom: 16),
+            //child: Image(image: ""),
+          ),
               GestureDetector(
-                onTap: (){print("Clique Unico!");},
-                onDoubleTap: (){print("Dois cliques!");},
                 onLongPress: (){print("Clique longo!");},
                 child: Text(
                   "Coming Soon!",
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 18,
                     fontWeight: FontWeight.w700,
                     color: Colors.purple,
                   ),
                 ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 16),
               ),
               RaisedButton(
                 onPressed: _callContent,

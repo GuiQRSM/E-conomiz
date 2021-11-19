@@ -40,7 +40,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
       body: Container(
         width: double.infinity,
         child: Padding(
-          padding: EdgeInsets.all(17),
+          padding: EdgeInsets.only(bottom: 16),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[

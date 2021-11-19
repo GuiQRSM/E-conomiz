@@ -30,7 +30,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
     });
   }
 
-var _imageSecret = AssetImage("imagens/Adeconomiz.png");
+var _dinamicImage = AssetImage("imagens/Adeconomiz.png");
 
   @override
   Widget build(BuildContext context) {
@@ -59,8 +59,9 @@ var _imageSecret = AssetImage("imagens/Adeconomiz.png");
             ),
            ),
               GestureDetector(
+                onLongPress: ,
                 child: Image(
-                  image: this._imageSecret,
+                  image: this._dinamicImage,
                 height: 60,),
               ),
               Padding(

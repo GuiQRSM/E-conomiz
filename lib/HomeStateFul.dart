@@ -30,11 +30,8 @@ class _HomeStateFulState extends State<HomeStateFul> {
     });
   }
 
-  void _callEasterEgg(String comandSecret) {
 
 
-
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -50,20 +47,19 @@ class _HomeStateFulState extends State<HomeStateFul> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
-                "E-conomiz",
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.w400,
-                  color: primeColor,
-                ),
-              ),
+
           Padding(
-          padding: EdgeInsets.only(bottom: 16),
-            //child: Image(image: ""),
-          ),
+          padding: EdgeInsets.only(bottom: 16, top: 16),
+            child: Text(
+              "E-conomiz",
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.w400,
+                color: primeColor,
+              ),
+            ),
+           ),
               GestureDetector(
-                onLongPress: () => _callEasterEgg("comandoON"),
                 child: Text(
                   "Coming Soon!",
                   style: TextStyle(

@@ -30,6 +30,12 @@ class _HomeStateFulState extends State<HomeStateFul> {
     });
   }
 
+  void _callEasterEgg(String comandSecret) {
+
+
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

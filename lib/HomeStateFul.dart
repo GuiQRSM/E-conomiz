@@ -83,18 +83,21 @@ class _HomeStateFulState extends State<HomeStateFul> {
                 color: primeColor,
               ),
             ),
-            RaisedButton(
+            Padding(
+                padding: EdgeInsets.only(top: 10),
+            child:RaisedButton(
               onPressed: (){},
+              padding: EdgeInsets.all(16),
               color: primeColor,
+              textColor: Colors.white,
               child: Text(
-                "Clique Aqui!",
+                "Registrar",
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 18,
                   fontWeight: FontWeight.w400,
-                  color: Colors.white,
                 ),
               ),
-            ),
+            ),),
           ],
         ),
       ),

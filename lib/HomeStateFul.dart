@@ -42,7 +42,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
               height: 120,),
             ),
             Padding(
-              padding: EdgeInsets.only(bottom: 12),
+              padding: EdgeInsets.only(bottom: 10),
               child: Text(
                   "Faça seu pré-registro!",
               style: TextStyle(
@@ -50,6 +50,38 @@ class _HomeStateFulState extends State<HomeStateFul> {
                 fontWeight: FontWeight.w500,
                 color: primeColor,
               ),),
+            ),
+            TextField(
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                labelText: "E-mail",
+                labelStyle: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  color: primeColor,
+                ),
+              ),
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w300,
+                color: primeColor,
+              ),
+            ),
+            TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: "Número de telefone",
+                labelStyle: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  color: primeColor,
+                ),
+              ),
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w300,
+                color: primeColor,
+              ),
             ),
             RaisedButton(
               onPressed: (){},

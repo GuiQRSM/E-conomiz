@@ -36,10 +36,20 @@ class _HomeStateFulState extends State<HomeStateFul> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.only(top: 32),
+              padding: EdgeInsets.only(bottom: 32),
+              child: Image.asset(
+                  "imagens/E-conomiz.png",
+              height: 120,),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 16),
+              padding: EdgeInsets.only(bottom: 12),
+              child: Text(
+                  "Faça seu pré-registro!",
+              style: TextStyle(
+                fontSize: 23,
+                fontWeight: FontWeight.w500,
+                color: primeColor,
+              ),),
             ),
             RaisedButton(
               onPressed: (){},

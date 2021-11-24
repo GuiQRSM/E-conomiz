@@ -8,8 +8,7 @@ class HomeStateFul extends StatefulWidget {
   _HomeStateFulState createState() => _HomeStateFulState();
 }
 
-const primeColor = Color.fromARGB(100, 98, 0, 238);
-
+const primeColor = Color.fromARGB(255, 98, 0, 238);
 
 class _HomeStateFulState extends State<HomeStateFul> {
 

@@ -21,28 +21,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
 
   var _text = "Test Content!";
 
-  void _callContent() {
-    var randomContent = Random().nextInt(_content.length);
 
-    setState(() {
-      _text = _content[randomContent];
-    });
-  }
-
-var _dinamicImage = AssetImage("imagens/Adeconomiz.png");
-var _secretImage = AssetImage("imagens/E-conomiz.png");
-
-void _callSecretImage() {
-
-  Image(
-    image: this._secretImage,
-  height: 150,);
-
-  setState(() {
-    _dinamicImage = _secretImage;
-  });
-
-}
 
   @override
   Widget build(BuildContext context) {
@@ -52,32 +31,18 @@ void _callSecretImage() {
         backgroundColor: primeColor,
       ),
       body: Container(
+        padding: EdgeInsets.all(32),
         width: double.infinity,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.only(bottom: 16, top: 16),
-              child: Text(
-                "E-conomiz(Fresh version)",
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.w700,
-                  color: primeColor,
-                ),
-              ),
-            ),
-            GestureDetector(
-              onLongPress: () => _callSecretImage(),
-              child: Image(
-                image: this._dinamicImage,
-                height: 100,),
+              padding: EdgeInsets.only(top: 32),
             ),
             Padding(
               padding: EdgeInsets.only(top: 16),
             ),
             RaisedButton(
-              onPressed: _callContent,
+              onPressed: (){},
               color: primeColor,
               child: Text(
                 "Clique Aqui!",
@@ -86,14 +51,6 @@ void _callSecretImage() {
                   fontWeight: FontWeight.w400,
                   color: Colors.white,
                 ),
-              ),
-            ),
-            Text(
-              "$_text",
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w700,
-                color: primeColor,
               ),
             ),
           ],

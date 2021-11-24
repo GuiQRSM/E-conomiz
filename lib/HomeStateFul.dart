@@ -21,7 +21,8 @@ class _HomeStateFulState extends State<HomeStateFul> {
 
   var _text = "Test Content!";
 
-
+  TextEditingController _controllerEmail = TextEditingController();
+  TextEditingController _controllerPhoneNumber = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -66,6 +67,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
                 fontWeight: FontWeight.w300,
                 color: primeColor,
               ),
+              controller: _controllerEmail,
             ),
             TextField(
               keyboardType: TextInputType.number,
@@ -82,11 +84,15 @@ class _HomeStateFulState extends State<HomeStateFul> {
                 fontWeight: FontWeight.w300,
                 color: primeColor,
               ),
+              controller: _controllerPhoneNumber,
             ),
             Padding(
                 padding: EdgeInsets.only(top: 10),
             child:RaisedButton(
-              onPressed: (){},
+              onPressed: (){
+                print("E-mail: " + _controllerEmail.text);
+                print("Número de telefone: " + _controllerPhoneNumber.text);
+              },
               padding: EdgeInsets.all(16),
               color: primeColor,
               textColor: Colors.white,

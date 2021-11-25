@@ -45,6 +45,13 @@ class _HomeStateFulState extends State<HomeStateFul> {
         this._text =  "Neste contexto o preço  SECUNDÀRIO compensa.";
       });
     }
+    _cleanFields();
+  }
+
+  void _cleanFields() {
+
+    _controllerFirst.text = "";
+    _controllerSecond.text = "";
 
   }
 
@@ -143,7 +150,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
       bottomNavigationBar: BottomAppBar(
         color: primeColor,
         child: Padding(
-          padding: EdgeInsets.all(16),
+          padding: EdgeInsets.all(13),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[

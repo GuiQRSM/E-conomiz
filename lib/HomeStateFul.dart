@@ -24,11 +24,16 @@ class _HomeStateFulState extends State<HomeStateFul> {
   TextEditingController _controllerFirst = TextEditingController();
   TextEditingController _controllerSecond= TextEditingController();
 
-  void calcPrice() {
+  void _calcPrice() {
 
     var firstPrice = double.tryParse(_controllerFirst.text);
     var secobdPrice = double.tryParse(_controllerSecond.text);
 
+    if(firstPrice == null || secobdPrice == null){
+      setState(() {
+        this._text = "Operação inválida, utilize numeração decimal acima de (0) e com (.)!";
+      });
+    }
   }
 
   @override
@@ -95,9 +100,9 @@ class _HomeStateFulState extends State<HomeStateFul> {
                 controller: _controllerSecond,
               ),
               Padding(
-                padding: EdgeInsets.only(top: 10),
+                padding: EdgeInsets.only( top: 5),
                 child:RaisedButton(
-                  onPressed: (){},
+                  onPressed: _calcPrice,
                   padding: EdgeInsets.all(16),
                   color: primeColor,
                   textColor: Colors.white,
@@ -113,8 +118,9 @@ class _HomeStateFulState extends State<HomeStateFul> {
                 padding: EdgeInsets.only(top: 20),
               child: Text(
                   "$_text",
+              textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 14,
+                fontSize: 16,
                 fontWeight: FontWeight.w500,
                 color: primeColor,
               ),),)

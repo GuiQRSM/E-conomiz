@@ -34,6 +34,18 @@ class _HomeStateFulState extends State<HomeStateFul> {
         this._text = "Operação inválida, utilize numeração decimal acima de (0) e com (.)!";
       });
     }
+
+    var dividePrice = firstPrice! / secobdPrice!;
+    if(dividePrice >= 0.7){
+      setState(() {
+        this._text = "Neste contexto o preço  PRIMÀRIO compensa.";
+      });
+    }else {
+      setState(() {
+        this._text =  "Neste contexto o preço  SECUNDÀRIO compensa.";
+      });
+    }
+
   }
 
   @override

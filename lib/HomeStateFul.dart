@@ -24,7 +24,12 @@ class _HomeStateFulState extends State<HomeStateFul> {
   TextEditingController _controllerFirst = TextEditingController();
   TextEditingController _controllerSecond= TextEditingController();
 
-  void calcPrice()
+  void calcPrice() {
+
+    var firstPrice = double.tryParse(_controllerFirst.text);
+    var secobdPrice = double.tryParse(_controllerSecond.text);
+
+  }
 
   @override
   Widget build(BuildContext context) {

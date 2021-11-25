@@ -19,10 +19,12 @@ class _HomeStateFulState extends State<HomeStateFul> {
     "Compartilhe os melhores preços."
   ];
 
-  var _text = "Test Content!";
+  var _text = "";
 
-  TextEditingController _controllerEmail = TextEditingController();
-  TextEditingController _controllerPhoneNumber = TextEditingController();
+  TextEditingController _controllerFirst = TextEditingController();
+  TextEditingController _controllerSecond= TextEditingController();
+
+  void calcPrice()
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +56,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
                   ),),
               ),
               TextField(
-                keyboardType: TextInputType.emailAddress,
+                keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   labelText: "Preço primário, ex 2.50",
                   labelStyle: TextStyle(
@@ -68,7 +70,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
                   fontWeight: FontWeight.w300,
                   color: primeColor,
                 ),
-                controller: _controllerEmail,
+                controller: _controllerFirst,
               ),
               TextField(
                 keyboardType: TextInputType.number,
@@ -85,26 +87,32 @@ class _HomeStateFulState extends State<HomeStateFul> {
                   fontWeight: FontWeight.w300,
                   color: primeColor,
                 ),
-                controller: _controllerPhoneNumber,
+                controller: _controllerSecond,
               ),
               Padding(
                 padding: EdgeInsets.only(top: 10),
                 child:RaisedButton(
-                  onPressed: (){
-                    print("E-mail: " + _controllerEmail.text);
-                    print("Número de telefone: " + _controllerPhoneNumber.text);
-                  },
+                  onPressed: (){},
                   padding: EdgeInsets.all(16),
                   color: primeColor,
                   textColor: Colors.white,
                   child: Text(
-                    "Registrar",
+                    "Calcular",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
                     ),
                   ),
                 ),),
+              Padding(
+                padding: EdgeInsets.only(top: 20),
+              child: Text(
+                  "$_text",
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                color: primeColor,
+              ),),)
             ],
           ),
         ),

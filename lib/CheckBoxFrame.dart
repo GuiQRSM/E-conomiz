@@ -11,7 +11,11 @@ const primeColor = Color.fromARGB(255, 98, 0, 238);
 
 class _CheckBoxFrameState extends State<CheckBoxFrame> {
 
+  var _textShow = "";
 
+ var _selectedCereais = false;
+ var _selectedHigiene = false;
+ var _selectedBebidas = false;
 
   @override
   Widget build(BuildContext context) {
@@ -25,12 +29,12 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
         width: double.infinity,
         child: Column(
           children: <Widget>[
-            Padding(padding: EdgeInsets.only(bottom: 18),
-            child: CheckboxListTile(value: null, onChanged: null),),
             Padding(padding: EdgeInsets.only(top: 10),
-            child: CheckboxListTile(value: null, onChanged: null),),
+            child: CheckboxListTile(value: _selectedCereais, onChanged: null),),
+            Padding(padding: EdgeInsets.only(top: 10),
+            child: CheckboxListTile(value: _selectedHigiene, onChanged: null),),
             Padding(padding: EdgeInsets.only(top: 10, bottom: 10),
-            child: CheckboxListTile(value: null, onChanged: null),)
+            child: CheckboxListTile(value: _selectedBebidas, onChanged: null),)
           ],
         ),
       ),

@@ -107,7 +107,13 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
             Padding(padding: EdgeInsets.only(top: 10),
             child:  RaisedButton(
               padding: EdgeInsets.all(14),
-              onPressed: (){},
+              onPressed: (){
+                setState(() {
+                  this._textShow = "Seleção de Cerais: " + _selectedCereais.toString() +
+                      "Seleção de higiene: " + _selectedHigiene.toString() +
+                  "Seleção de Bebidas: " + _selectedBebidas.toString();
+                });
+              },
               child: Text("Registrar",
                 style: TextStyle(
                   fontSize: 16,

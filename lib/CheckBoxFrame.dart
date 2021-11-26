@@ -104,6 +104,14 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
                 },
              ),
             ),
+            Text(
+                "$_textShow",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+                color: primeColor,
+              ),
+            ),
             Padding(padding: EdgeInsets.only(top: 10),
             child:  RaisedButton(
               padding: EdgeInsets.all(14),

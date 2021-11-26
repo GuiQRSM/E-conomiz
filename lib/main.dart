@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:economiz/CheckBoxFrame.dart';
 import 'package:economiz/HomeStateFul.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ void main() {
    MaterialApp(
      title: "E-conomiz",
      debugShowCheckedModeBanner: false,
-     home: HomeStateFul(),
+     home: CheckBoxFrame(),
    ),
  );
 

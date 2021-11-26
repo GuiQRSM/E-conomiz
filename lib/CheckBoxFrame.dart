@@ -20,7 +20,9 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
         title: Text("E-conomiz"),
         backgroundColor: primeColor,
       ),
-      //body: ,
+      body: Container(
+
+      ),
       bottomNavigationBar: BottomAppBar(
         color: primeColor,
         child: Padding(

@@ -46,7 +46,7 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
                 subtitle: Text("Milho, Trigo, Soja, Mostarda, Feijão, etc.",
                   style: TextStyle(
                     fontSize: 14,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w600,
                     color: Colors.black,
                   ),),
                 activeColor: primeColor,
@@ -69,7 +69,7 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
                 subtitle: Text("Sabonete, Creme Dental, Papel higienico, etc.",
                   style: TextStyle(
                     fontSize: 14,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w600,
                     color: Colors.black,
                   ),),
                 activeColor: primeColor,
@@ -92,7 +92,7 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
                 subtitle: Text("Refrigerante, Destilados, Cerveja, Energético, etc.",
                   style: TextStyle(
                     fontSize: 14,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w600,
                     color: Colors.black,
                   ),),
                 activeColor: primeColor,

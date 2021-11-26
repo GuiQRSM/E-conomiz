@@ -21,9 +21,16 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
         backgroundColor: primeColor,
       ),
       body: Container(
+        padding: EdgeInsets.all(18),
+        width: double.infinity,
         child: Column(
           children: <Widget>[
-
+            Padding(padding: EdgeInsets.only(bottom: 18),
+            child: CheckboxListTile(value: null, onChanged: null),),
+            Padding(padding: EdgeInsets.only(top: 10),
+            child: CheckboxListTile(value: null, onChanged: null),),
+            Padding(padding: EdgeInsets.only(top: 10, bottom: 10),
+            child: CheckboxListTile(value: null, onChanged: null),)
           ],
         ),
       ),

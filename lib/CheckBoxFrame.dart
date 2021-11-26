@@ -21,7 +21,11 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
         backgroundColor: primeColor,
       ),
       body: Container(
+        child: Column(
+          children: <Widget>[
 
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         color: primeColor,

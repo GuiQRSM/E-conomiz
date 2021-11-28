@@ -14,7 +14,8 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
+        title: Text("E-conomiz"),
+        backgroundColor: primeColor,
       ),
     );
   }

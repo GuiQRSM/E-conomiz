@@ -13,6 +13,8 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
 
   var _selcterRadio = "";
 
+  var _textBehavior = "";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,11 +23,11 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
         backgroundColor: primeColor,
       ),
       body: Container(
-        padding: EdgeInsets.all(18),
+        padding: EdgeInsets.all(14),
         width: double.infinity,
         child: Column(
           children: <Widget>[
-            Padding(padding: EdgeInsets.only(top: 13, bottom: 16),
+            Padding(padding: EdgeInsets.only(top: 13, bottom: 13),
             child: Text("Favorite seu supermecado",
             style: TextStyle(
               fontSize: 23,
@@ -101,6 +103,27 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                   });
                 }
             ),
+            Padding(
+              padding: EdgeInsets.only(top: 10),
+              child: RaisedButton(
+                padding: EdgeInsets.all(14),
+                onPressed: (){},
+                child: Text("Salvar",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white,
+                  ),),
+                color: primeColor,
+              ),
+            ),
+            Text(
+                "$_textBehavior",
+            style: TextStyle(
+              fontSize: 19,
+              fontWeight: FontWeight.w500,
+              color: primeColor,
+            ),),
           ],
         ),
       ),

@@ -104,22 +104,14 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
                 },
              ),
             ),
-            Text(
-                "$_textShow",
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w500,
-                color: primeColor,
-              ),
-            ),
-            Padding(padding: EdgeInsets.only(top: 10),
+            Padding(padding: EdgeInsets.only(top: 10, bottom: 10),
             child:  RaisedButton(
               padding: EdgeInsets.all(14),
               onPressed: (){
                 setState(() {
-                  this._textShow = "Seleção de Cerais: " + _selectedCereais.toString() +
-                      "Seleção de higiene: " + _selectedHigiene.toString() +
-                  "Seleção de Bebidas: " + _selectedBebidas.toString();
+                  this._textShow = " Seleção de Cerais: $_selectedCereais\n"
+                      " Seleção de higiene: $_selectedHigiene\n"
+                  " Seleção de Bebidas: $_selectedBebidas";
                 });
               },
               child: Text("Registrar",
@@ -130,6 +122,16 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
                 ),),
               color: primeColor,
             ),),
+            Padding(padding: EdgeInsets.only(top:10, bottom: 13),
+            child: Text(
+              "$_textShow",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+                color: primeColor,
+              ),
+             ),
+            ),
           ],
         ),
       ),

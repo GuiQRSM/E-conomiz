@@ -20,6 +20,11 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
       body: Container(
         padding: EdgeInsets.all(18),
         width: double.infinity,
+        child: Column(
+          children: <Widget>[
+
+          ],
+        ),
       ),
     );
   }

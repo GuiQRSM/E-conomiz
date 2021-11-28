@@ -104,7 +104,7 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                 }
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10),
+              padding: EdgeInsets.only(top: 14),
               child: RaisedButton(
                 padding: EdgeInsets.all(14),
                 onPressed: (){
@@ -122,7 +122,7 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 20),
+              padding: EdgeInsets.only(top: 35),
             child: Text(
               "$_textBehavior",
               style: TextStyle(
@@ -132,6 +132,49 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
               ),),
             ),
           ],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: primeColor,
+        child: Padding(
+          padding: EdgeInsets.all(13),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Text(
+                "b1",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                "b2",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                "b3",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                "b4",
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );

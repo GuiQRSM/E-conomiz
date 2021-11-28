@@ -17,7 +17,10 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
         title: Text("E-conomiz"),
         backgroundColor: primeColor,
       ),
-      body: Container(),
+      body: Container(
+        padding: EdgeInsets.all(18),
+        width: double.infinity,
+      ),
     );
   }
 }

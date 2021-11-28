@@ -43,7 +43,9 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                value: "Líder",
                groupValue: _selcterRadio,
                onChanged: (String? mrc1){
-
+                 setState(() {
+                   _selcterRadio = mrc1!;
+                 });
                }
            ),
             RadioListTile(
@@ -56,7 +58,9 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                 value: "Mateus",
                 groupValue: _selcterRadio,
                 onChanged: (String? mrc2){
-
+                  setState(() {
+                    _selcterRadio = mrc2!;
+                  });
                 }
             ),
             RadioListTile(
@@ -69,7 +73,9 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                 value: "Formosa",
                 groupValue: _selcterRadio,
                 onChanged: (String? mrc3){
-
+                  setState(() {
+                    _selcterRadio = mrc3!;
+                  });
                 }
             ),
             RadioListTile(
@@ -82,7 +88,9 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                 value: "Preço Baixo",
                 groupValue: _selcterRadio,
                 onChanged: (String? mrc4){
-
+                  setState(() {
+                    _selcterRadio = mrc4!;
+                  });
                 }
             ),
           ],

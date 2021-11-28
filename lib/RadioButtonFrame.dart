@@ -7,9 +7,15 @@ class RadioButtonFrame extends StatefulWidget {
   _RadioButtonFrameState createState() => _RadioButtonFrameState();
 }
 
+const primeColor = Color.fromARGB(255, 98, 0, 238);
+
 class _RadioButtonFrameState extends State<RadioButtonFrame> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+
+      ),
+    );
   }
 }

@@ -107,7 +107,11 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
               padding: EdgeInsets.only(top: 10),
               child: RaisedButton(
                 padding: EdgeInsets.all(14),
-                onPressed: (){},
+                onPressed: (){
+                  setState(() {
+                    _textBehavior = "Supermecado favoritado: $_selcterRadio";
+                  });
+                },
                 child: Text("Salvar",
                   style: TextStyle(
                     fontSize: 16,
@@ -117,13 +121,16 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                 color: primeColor,
               ),
             ),
-            Text(
-                "$_textBehavior",
-            style: TextStyle(
-              fontSize: 19,
-              fontWeight: FontWeight.w500,
-              color: primeColor,
-            ),),
+            Padding(
+              padding: EdgeInsets.only(top: 20),
+            child: Text(
+              "$_textBehavior",
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+                color: primeColor,
+              ),),
+            ),
           ],
         ),
       ),

@@ -40,6 +40,8 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                  fontWeight: FontWeight.w500,
                  color: primeColor,
                ),),
+               activeColor: primeColor,
+               secondary: Icon(Icons.where_to_vote),
                value: "Líder",
                groupValue: _selcterRadio,
                onChanged: (String? mrc1){
@@ -55,6 +57,8 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                     fontWeight: FontWeight.w500,
                     color: primeColor,
                   ),),
+                activeColor: primeColor,
+                secondary: Icon(Icons.where_to_vote),
                 value: "Mateus",
                 groupValue: _selcterRadio,
                 onChanged: (String? mrc2){
@@ -70,6 +74,8 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                     fontWeight: FontWeight.w500,
                     color: primeColor,
                   ),),
+                activeColor: primeColor,
+                secondary: Icon(Icons.where_to_vote),
                 value: "Formosa",
                 groupValue: _selcterRadio,
                 onChanged: (String? mrc3){
@@ -85,6 +91,8 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                     fontWeight: FontWeight.w500,
                     color: primeColor,
                   ),),
+                activeColor: primeColor,
+                secondary: Icon(Icons.where_to_vote),
                 value: "Preço Baixo",
                 groupValue: _selcterRadio,
                 onChanged: (String? mrc4){

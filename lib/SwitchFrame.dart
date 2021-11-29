@@ -18,6 +18,15 @@ class _SwitchFrameState extends State<SwitchFrame> {
         title: Text("E-conomiz"),
         backgroundColor: primeColor,
       ),
+      body: Container(
+        padding: EdgeInsets.all(14),
+        width: double.infinity,
+        child: Column(
+          children: <Widget>[
+
+          ],
+        ),
+      ),
     );
   }
 }

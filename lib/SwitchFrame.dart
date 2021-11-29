@@ -13,6 +13,8 @@ class _SwitchFrameState extends State<SwitchFrame> {
 
   var _choiseKey = false;
   var _choiseKey2 = false;
+  var _choiseKey3 = false;
+  var _choiseKey4 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +38,7 @@ class _SwitchFrameState extends State<SwitchFrame> {
              ),),
            ),
             SwitchListTile(
-                title: Text("Permitir alertas de ofertas",
+                title: Text("Permitir alertas de ofertas.",
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   color: primeColor
@@ -52,7 +54,7 @@ class _SwitchFrameState extends State<SwitchFrame> {
                 },
             ),
             SwitchListTile(
-                title: Text("Sincronizar com sua conta Google",
+                title: Text("Sincronizar com sua conta Google.",
                 style: TextStyle(
                     fontWeight: FontWeight.w600,
                     color: primeColor
@@ -67,6 +69,38 @@ class _SwitchFrameState extends State<SwitchFrame> {
                   });
                 },
             ),
+            SwitchListTile(
+                 title: Text("Permitir acesso a aplicativos de corrida.",
+                 style: TextStyle(
+                     fontWeight: FontWeight.w600,
+                     color: primeColor
+                 ),),
+                activeColor: primeColor,
+                secondary: Icon(Icons.local_taxi,
+                color: primeColor,),
+                value: _choiseKey3,
+                onChanged: (bool? vlr3){
+                   setState(() {
+                     _choiseKey3 = vlr3!;
+                   });
+                },
+            ),
+            SwitchListTile(
+                title: Text("Ativar modo Dark.",
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    color: primeColor,
+                ),),
+                activeColor: primeColor,
+                secondary: Icon(Icons.dark_mode,
+                color: primeColor,),
+                value: _choiseKey4,
+                onChanged: (bool? vlr4){
+                  setState(() {
+                    _choiseKey4 = vlr4!;
+                  });
+                },
+            )
           ],
         ),
       ),

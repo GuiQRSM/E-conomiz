@@ -15,7 +15,8 @@ class _SwitchFrameState extends State<SwitchFrame> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
+        title: Text("E-conomiz"),
+        backgroundColor: primeColor,
       ),
     );
   }

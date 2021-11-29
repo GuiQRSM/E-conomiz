@@ -7,9 +7,16 @@ class SwitchFrame extends StatefulWidget {
   _SwitchFrameState createState() => _SwitchFrameState();
 }
 
+const primeColor = Color.fromARGB(255, 98, 0, 238);
+
 class _SwitchFrameState extends State<SwitchFrame> {
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+
+      ),
+    );
   }
 }

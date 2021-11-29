@@ -11,6 +11,8 @@ const primeColor = Color.fromARGB(255, 98, 0, 238);
 
 class _SwitchFrameState extends State<SwitchFrame> {
 
+  var _choiseKey = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +25,15 @@ class _SwitchFrameState extends State<SwitchFrame> {
         width: double.infinity,
         child: Column(
           children: <Widget>[
-
+           Padding(
+               padding: EdgeInsets.only(top: 14),
+           child:  Text("Configurações gerais",
+             style: TextStyle(
+               fontSize: 20,
+               fontWeight: FontWeight.w500,
+               color: primeColor,
+             ),),
+           ),
           ],
         ),
       ),

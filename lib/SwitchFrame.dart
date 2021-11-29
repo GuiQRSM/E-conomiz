@@ -15,6 +15,7 @@ class _SwitchFrameState extends State<SwitchFrame> {
   var _choiseKey2 = false;
   var _choiseKey3 = false;
   var _choiseKey4 = false;
+  var _textDinamic = "";
 
   @override
   Widget build(BuildContext context) {
@@ -107,17 +108,30 @@ class _SwitchFrameState extends State<SwitchFrame> {
               padding: EdgeInsets.all(14),
               onPressed: (){
                 setState(() {
-
+                  _textDinamic = "Ativação do Switch 1: $_choiseKey\n"
+                                 "Ativação do Switch 2: $_choiseKey2\n"
+                                 "Ativação do Switch 2: $_choiseKey3\n"
+                                 "Ativação do Switch 2: $_choiseKey4\n";
                 });
               },
               child: Text("Salvar",
                 style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w400,
                   color: Colors.white,
                 ),),
               color: primeColor,
             ),),
+            Padding(
+              padding: EdgeInsets.only(top: 20),
+            child:  Text(
+                "$_textDinamic",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                  color: primeColor,
+                ),),
+            ),
           ],
         ),
       ),

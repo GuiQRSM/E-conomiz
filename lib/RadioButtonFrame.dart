@@ -29,7 +29,7 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
           children: <Widget>[
             Padding(padding: EdgeInsets.only(top: 13, bottom: 13),
             child: Text("Favorite seu supermecado",
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 23,
               fontWeight: FontWeight.w500,
               color: primeColor,

@@ -100,7 +100,24 @@ class _SwitchFrameState extends State<SwitchFrame> {
                     _choiseKey4 = vlr4!;
                   });
                 },
-            )
+            ),
+            Padding(
+              padding: EdgeInsets.only(top:20),
+            child:  RaisedButton(
+              padding: EdgeInsets.all(14),
+              onPressed: (){
+                setState(() {
+
+                });
+              },
+              child: Text("Salvar",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white,
+                ),),
+              color: primeColor,
+            ),),
           ],
         ),
       ),

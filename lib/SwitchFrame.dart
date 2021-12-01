@@ -25,9 +25,9 @@ class _SwitchFrameState extends State<SwitchFrame> {
         backgroundColor: primeColor,
       ),
       body: Container(
-        padding: EdgeInsets.all(10),
         width: double.infinity,
         child: SingleChildScrollView(
+          padding: EdgeInsets.all(10),
           child: Column(
             children: <Widget>[
               Padding(

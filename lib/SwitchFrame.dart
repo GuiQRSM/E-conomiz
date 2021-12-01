@@ -29,8 +29,9 @@ class _SwitchFrameState extends State<SwitchFrame> {
       body: Container(
         width: double.infinity,
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.all(16),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(bottom: 14),
@@ -106,11 +107,13 @@ class _SwitchFrameState extends State<SwitchFrame> {
                 },
               ),
               Padding(
-                  padding: EdgeInsets.only(top: 14, bottom: 14),
+                  padding: EdgeInsets.only(top: 16),
                 child: Slider(
                     value: _evoValue,
                     min: 0,
                     max: 14,
+                    activeColor: primeColor,
+                    inactiveColor: Colors.purple,
                     onChanged: (double evo){
                       setState(() {
                         _evoValue = evo;
@@ -142,6 +145,7 @@ class _SwitchFrameState extends State<SwitchFrame> {
                 padding: EdgeInsets.only(top: 20),
                 child:  Text(
                   "$_textDinamic",
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w500,

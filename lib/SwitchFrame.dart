@@ -17,6 +17,8 @@ class _SwitchFrameState extends State<SwitchFrame> {
   var _choiseKey4 = false;
   var _textDinamic = "";
 
+  var _evoValue = 5.0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -106,8 +108,14 @@ class _SwitchFrameState extends State<SwitchFrame> {
               Padding(
                   padding: EdgeInsets.only(top: 14, bottom: 14),
                 child: Slider(
-                    value: value,
-                    onChanged: onChanged,
+                    value: _evoValue,
+                    min: 0,
+                    max: 14,
+                    onChanged: (double evo){
+                      setState(() {
+                        _evoValue = evo;
+                      });
+                    },
                 ),
               ),
               Padding(

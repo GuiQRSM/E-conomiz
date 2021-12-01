@@ -17,7 +17,7 @@ class _SwitchFrameState extends State<SwitchFrame> {
   var _choiseKey4 = false;
   var _textDinamic = "";
 
-  var _evoValue = 5.0;
+  var _evoValue = 0.0;
   var _labelEvo = "valor";
 
   @override
@@ -108,6 +108,15 @@ class _SwitchFrameState extends State<SwitchFrame> {
                 },
               ),
               Padding(
+                padding: EdgeInsets.only(top:10),
+                child: Text("Emissões de Promoções:",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                  color: primeColor,
+                ),),
+              ),
+              Padding(
                   padding: EdgeInsets.only(top: 16),
                 child: Slider(
                     value: _evoValue,
@@ -117,10 +126,10 @@ class _SwitchFrameState extends State<SwitchFrame> {
                     divisions: 14,
                     activeColor: primeColor,
                     inactiveColor: Colors.purple,
-                    onChanged: (double evo){
+                    onChanged: (double? evo){
                       setState(() {
-                        _evoValue = evo;
-                        _labelEvo = "Emissões de promoções: " + evo.toString();
+                        _evoValue = evo!;
+                        _labelEvo = "Emissões de promoções: " + _evoValue.toString();
                       });
                     },
                 ),
@@ -134,7 +143,9 @@ class _SwitchFrameState extends State<SwitchFrame> {
                       _textDinamic = "Ativação do Switch 1: $_choiseKey\n"
                           "Ativação do Switch 2: $_choiseKey2\n"
                           "Ativação do Switch 2: $_choiseKey3\n"
-                          "Ativação do Switch 2: $_choiseKey4\n";
+                          "Ativação do Switch 2: $_choiseKey4\n"
+                           "$_labelEvo";
+
                     });
                   },
                   child: Text("Salvar",

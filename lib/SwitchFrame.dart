@@ -104,6 +104,13 @@ class _SwitchFrameState extends State<SwitchFrame> {
                 },
               ),
               Padding(
+                  padding: EdgeInsets.only(top: 14, bottom: 14),
+                child: Slider(
+                    value: value,
+                    onChanged: onChanged,
+                ),
+              ),
+              Padding(
                 padding: EdgeInsets.only(top:20),
                 child:  RaisedButton(
                   padding: EdgeInsets.all(14),

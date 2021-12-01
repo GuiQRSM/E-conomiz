@@ -18,6 +18,7 @@ class _SwitchFrameState extends State<SwitchFrame> {
   var _textDinamic = "";
 
   var _evoValue = 5.0;
+  var _labelEvo = "valor";
 
   @override
   Widget build(BuildContext context) {
@@ -112,11 +113,14 @@ class _SwitchFrameState extends State<SwitchFrame> {
                     value: _evoValue,
                     min: 0,
                     max: 14,
+                    label: _labelEvo,
+                    divisions: 14,
                     activeColor: primeColor,
                     inactiveColor: Colors.purple,
                     onChanged: (double evo){
                       setState(() {
                         _evoValue = evo;
+                        _labelEvo = "Emissões de promoções: " + evo.toString();
                       });
                     },
                 ),

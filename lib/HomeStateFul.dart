@@ -1,3 +1,6 @@
+import 'dart:html';
+
+import 'package:economiz/SwitchFrame.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -140,7 +143,12 @@ class _HomeStateFulState extends State<HomeStateFul> {
                   padding: EdgeInsets.only(top: 10,),
                 child: RaisedButton(
                     onPressed: (){
-
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SwitchFrame(),
+                          ),
+                      );
                     },
                   padding: EdgeInsets.all(16),
                   color: primeColor,

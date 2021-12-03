@@ -69,6 +69,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
         child: SingleChildScrollView(
           padding: EdgeInsets.all(32),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(bottom: 32),
@@ -135,6 +136,23 @@ class _HomeStateFulState extends State<HomeStateFul> {
                     ),
                   ),
                 ),),
+              Padding(
+                  padding: EdgeInsets.only(top: 10,),
+                child: RaisedButton(
+                    onPressed: (){
+
+                    },
+                  padding: EdgeInsets.all(16),
+                  color: primeColor,
+                  textColor: supportingColor,
+                  child: Text(
+                      "Configurações Gerais",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w400,
+                  ),),
+                ),
+              ),
               Padding(
                 padding: EdgeInsets.only(top: 20),
               child: Text(

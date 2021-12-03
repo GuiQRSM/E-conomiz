@@ -8,6 +8,7 @@ class RadioButtonFrame extends StatefulWidget {
 }
 
 const primeColor = Color.fromARGB(255, 98, 0, 238);
+const supportingColor = Color.fromRGBO(246, 203, 237, 1);
 
 class _RadioButtonFrameState extends State<RadioButtonFrame> {
 
@@ -18,6 +19,7 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: supportingColor,
       appBar: AppBar(
         title: Text("E-conomiz"),
         backgroundColor: primeColor,
@@ -116,7 +118,7 @@ class _RadioButtonFrameState extends State<RadioButtonFrame> {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
-                    color: Colors.white,
+                    color: supportingColor,
                   ),),
                 color: primeColor,
               ),

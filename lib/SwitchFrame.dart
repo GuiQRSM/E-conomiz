@@ -1,3 +1,4 @@
+import 'package:economiz/RadioButtonFrame.dart';
 import 'package:flutter/material.dart';
 
 class SwitchFrame extends StatefulWidget {
@@ -144,8 +145,8 @@ class _SwitchFrameState extends State<SwitchFrame> {
                     setState(() {
                       _textDinamic = "Ativação do Switch 1: $_choiseKey\n"
                           "Ativação do Switch 2: $_choiseKey2\n"
-                          "Ativação do Switch 2: $_choiseKey3\n"
-                          "Ativação do Switch 2: $_choiseKey4\n"
+                          "Ativação do Switch 3: $_choiseKey3\n"
+                          "Ativação do Switch 4: $_choiseKey4\n"
                            "$_labelEvo";
 
                     });
@@ -159,11 +160,16 @@ class _SwitchFrameState extends State<SwitchFrame> {
                   color: primeColor,
                 ),),
               Padding(
-                  padding: EdgeInsets.only(top: 5, bottom: 5),
+                  padding: EdgeInsets.only(top: 5, bottom: 2),
                 child: RaisedButton(
                   padding: EdgeInsets.all(14),
                     onPressed: (){
-
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => RadioButtonFrame(),
+                            ),
+                        );
                     },
                   child: Text(
                     "Seleção de Supermecados",

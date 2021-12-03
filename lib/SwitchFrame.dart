@@ -8,6 +8,7 @@ class SwitchFrame extends StatefulWidget {
 }
 
 const primeColor = Color.fromARGB(255, 98, 0, 238);
+const supportingColor = Color.fromRGBO(246, 203, 237, 1);
 
 class _SwitchFrameState extends State<SwitchFrame> {
 
@@ -23,6 +24,7 @@ class _SwitchFrameState extends State<SwitchFrame> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: supportingColor,
       appBar: AppBar(
         title: Text("E-conomiz"),
         backgroundColor: primeColor,
@@ -152,7 +154,7 @@ class _SwitchFrameState extends State<SwitchFrame> {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w400,
-                      color: Colors.white,
+                      color: supportingColor,
                     ),),
                   color: primeColor,
                 ),),

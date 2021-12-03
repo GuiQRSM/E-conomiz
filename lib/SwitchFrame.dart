@@ -159,6 +159,23 @@ class _SwitchFrameState extends State<SwitchFrame> {
                   color: primeColor,
                 ),),
               Padding(
+                  padding: EdgeInsets.only(top: 5, bottom: 5),
+                child: RaisedButton(
+                  padding: EdgeInsets.all(14),
+                    onPressed: (){
+
+                    },
+                  child: Text(
+                    "Seleção de Supermecados",
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                    color: supportingColor,
+                  ),),
+                  color: primeColor,
+                ),
+              ),
+              Padding(
                 padding: EdgeInsets.only(top: 20),
                 child:  Text(
                   "$_textDinamic",

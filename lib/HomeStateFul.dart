@@ -1,5 +1,6 @@
-import 'dart:html';
 
+
+import 'package:economiz/CheckBoxFrame.dart';
 import 'package:economiz/SwitchFrame.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
@@ -56,6 +57,17 @@ class _HomeStateFulState extends State<HomeStateFul> {
 
     _controllerFirst.text = "";
     _controllerSecond.text = "";
+
+  }
+
+  void _imageFrame (){
+
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => CheckBoxFrame(),
+        ),
+    );
 
   }
 
@@ -147,7 +159,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
                           context,
                           MaterialPageRoute(
                               builder: (context) => SwitchFrame(),
-                          ),
+                        ),
                       );
                     },
                   padding: EdgeInsets.all(16),

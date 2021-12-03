@@ -8,6 +8,7 @@ class CheckBoxFrame extends StatefulWidget {
 }
 
 const primeColor = Color.fromARGB(255, 98, 0, 238);
+const supportingColor = Color.fromRGBO(246, 203, 237, 1);
 
 class _CheckBoxFrameState extends State<CheckBoxFrame> {
 
@@ -20,6 +21,7 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: supportingColor,
       appBar: AppBar(
         title: Text("E-conomiz"),
         backgroundColor: primeColor,
@@ -118,7 +120,7 @@ class _CheckBoxFrameState extends State<CheckBoxFrame> {
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
-                  color: Colors.white,
+                  color: supportingColor,
                 ),),
               color: primeColor,
             ),),

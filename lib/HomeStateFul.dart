@@ -9,6 +9,7 @@ class HomeStateFul extends StatefulWidget {
 }
 
 const primeColor = Color.fromARGB(255, 98, 0, 238);
+const supportingColor = Color.fromRGBO(246, 203, 237, 1);
 
 class _HomeStateFulState extends State<HomeStateFul> {
 
@@ -58,6 +59,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: supportingColor,
       appBar: AppBar(
         title: Text("E-conomiz"),
         backgroundColor: primeColor,
@@ -119,12 +121,12 @@ class _HomeStateFulState extends State<HomeStateFul> {
                 controller: _controllerSecond,
               ),
               Padding(
-                padding: EdgeInsets.only( top: 5),
+                padding: EdgeInsets.only( top: 10),
                 child:RaisedButton(
                   onPressed: _calcPrice,
                   padding: EdgeInsets.all(16),
                   color: primeColor,
-                  textColor: Colors.white,
+                  textColor: supportingColor,
                   child: Text(
                     "Calcular",
                     style: TextStyle(

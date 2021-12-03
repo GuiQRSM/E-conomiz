@@ -14,7 +14,8 @@ void main() {
      title: "E-conomiz",
      debugShowCheckedModeBanner: false,
      //home: RadioButtonFrame(),
-     home: SwitchFrame(),
+     //home: SwitchFrame(),
+     home: HomeStateFul(),
    ),
  );
 

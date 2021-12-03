@@ -88,9 +88,12 @@ class _HomeStateFulState extends State<HomeStateFul> {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(bottom: 32),
-                child: Image.asset(
-                  "imagens/E-conomiz.png",
-                  height: 120,),
+                child: GestureDetector(
+                  onTap: _imageFrame,
+                  child:  Image.asset(
+                    "imagens/E-conomiz.png",
+                    height: 120,),
+                ),
               ),
               Padding(
                 padding: EdgeInsets.only(bottom: 10),

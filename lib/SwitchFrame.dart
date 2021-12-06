@@ -2,7 +2,9 @@ import 'package:economiz/RadioButtonFrame.dart';
 import 'package:flutter/material.dart';
 
 class SwitchFrame extends StatefulWidget {
-  const SwitchFrame({Key? key}) : super(key: key);
+
+String info;
+SwitchFrame(this.info);
 
   @override
   _SwitchFrameState createState() => _SwitchFrameState();

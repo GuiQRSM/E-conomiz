@@ -161,7 +161,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => SwitchFrame(),
+                              builder: (context) => SwitchFrame(info: '(Settings)',),
                         ),
                       );
                     },

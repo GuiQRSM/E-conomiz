@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class SwitchFrame extends StatefulWidget {
 
 String info;
-SwitchFrame(this.info);
+SwitchFrame({required this.info});
 
   @override
   _SwitchFrameState createState() => _SwitchFrameState();

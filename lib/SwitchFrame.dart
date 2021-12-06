@@ -41,7 +41,8 @@ class _SwitchFrameState extends State<SwitchFrame> {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(bottom: 14),
-                child:  Text("Configurações gerais",
+                child:  Text("Configurações gerais\n"
+                    "${widget.info}",
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.w500,

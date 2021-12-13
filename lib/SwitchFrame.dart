@@ -185,6 +185,22 @@ class _SwitchFrameState extends State<SwitchFrame> {
                 ),
               ),
               Padding(
+                padding: EdgeInsets.only(top: 5, bottom: 2),
+                child: RaisedButton(
+                  padding: EdgeInsets.all(14),
+                    onPressed: (){},
+                  color: primeColor,
+                    child: Text(
+                        "Configurar CEP",
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        color: supportingColor,
+                      ),
+                    ),
+                ),
+              ),
+              Padding(
                 padding: EdgeInsets.only(top: 20),
                 child:  Text(
                   "$_textDinamic",

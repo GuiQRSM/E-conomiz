@@ -24,7 +24,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
   void _ApiData () async {
 
     http.Response response;
-    var cep = "01001000";
+    var cep = _controllerCEP.text;
     var url = Uri.parse("https://viacep.com.br/ws/${cep}/json/");
 
     response = await http.get(url);

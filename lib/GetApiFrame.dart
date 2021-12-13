@@ -20,11 +20,12 @@ class _GetApiFrameState extends State<GetApiFrame> {
   var receptorText = "";
   var _dinamicText = "";
 
-  void _dadosApi () {
+  void _dadosApi () async {
 
     http.Response response;
     var cep = "01001000";
     var url = Uri.parse("https://viacep.com.br/ws/${cep}/json/");
+
 
   }
 

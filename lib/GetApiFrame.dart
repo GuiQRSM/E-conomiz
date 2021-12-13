@@ -26,6 +26,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
     var cep = "01001000";
     var url = Uri.parse("https://viacep.com.br/ws/${cep}/json/");
 
+    response = await http.get(url);
 
   }
 

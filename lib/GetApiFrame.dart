@@ -26,7 +26,18 @@ class _GetApiFrameState extends State<GetApiFrame> {
           padding: EdgeInsets.all(32),
           child: Column(
             children: <Widget>[
-
+              Padding(
+                  padding: EdgeInsets.only(top: 16),
+                child: Text(
+                    "${widget.getInfo}",
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w700,
+                    color: primeColor,
+                    letterSpacing: 3
+                  ),
+                ),
+              )
             ],
           ),
         ),

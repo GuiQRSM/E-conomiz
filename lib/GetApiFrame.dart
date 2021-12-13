@@ -31,13 +31,38 @@ class _GetApiFrameState extends State<GetApiFrame> {
                 child: Text(
                     "${widget.getInfo}",
                   style: TextStyle(
-                    fontSize: 22,
+                    fontSize: 25,
                     fontWeight: FontWeight.w700,
                     color: primeColor,
-                    letterSpacing: 3
+                    letterSpacing: 3,
                   ),
                 ),
-              )
+              ),
+              Padding(
+                  padding: EdgeInsets.only(top: 24),
+                child: TextField(
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(
+                    labelText: "CEP",
+                    labelStyle: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w600,
+                        color: primeColor,
+                        letterSpacing: 3
+                    ),
+                  ),
+                  style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w700,
+                      color: primeColor,
+                      letterSpacing: 3
+                  ),
+                  cursorColor: primeColor,
+                  maxLength: 8,
+                  maxLengthEnforced: true,
+                  //controller: ,
+                ),
+              ),
             ],
           ),
         ),

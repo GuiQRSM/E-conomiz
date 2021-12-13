@@ -52,17 +52,27 @@ class _GetApiFrameState extends State<GetApiFrame> {
                         color: primeColor,
                         letterSpacing: 3
                     ),
+                    hintText: "Insira a numeração de CEP.",
+                    hintStyle: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w500,
+                        color: primeColor,
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: primeColor),
+                    ),
                   ),
                   style: TextStyle(
                       fontSize: 17,
                       fontWeight: FontWeight.w700,
                       color: primeColor,
-                      letterSpacing: 3
+                      letterSpacing: 3,
                   ),
                   cursorColor: primeColor,
                   maxLength: 8,
                   maxLengthEnforced: true,
                   controller: _controllerCEP,
+
                 ),
               ),
             ],

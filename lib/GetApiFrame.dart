@@ -26,7 +26,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
       body: Container(
         width: double.infinity,
         child:SingleChildScrollView(
-          padding: EdgeInsets.all(32),
+          padding: EdgeInsets.all(28),
           child: Column(
             children: <Widget>[
               Padding(
@@ -76,7 +76,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
                 ),
               ),
               Padding(
-                  padding: EdgeInsets.only(top:3),
+                  padding: EdgeInsets.only(top:2),
                 child: RaisedButton(
                   padding: EdgeInsets.all(14),
                     onPressed: (){},
@@ -84,13 +84,24 @@ class _GetApiFrameState extends State<GetApiFrame> {
                   child: Text(
                     "Verificar",
                     style: TextStyle(
-                      fontSize: 14,
+                      fontSize: 16,
                       fontWeight: FontWeight.w600,
                       color: supportingColor,
                     ),
                   ),
                 ),
-              )
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 22),
+                child: Text(
+                  "$_dinamicText",
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w700,
+                    color: primeColor,
+                  ),
+                ),
+              ),
             ],
           ),
         ),

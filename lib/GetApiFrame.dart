@@ -29,6 +29,12 @@ class _GetApiFrameState extends State<GetApiFrame> {
 
     response = await http.get(url);
     Map<String, dynamic> data = json.decode(response.body);
+    String logradouro = data["logradouro"];
+    String bairro = data["bairro"];
+    String localidade = data["localidade"];
+    String uf = data["uf"];
+    String ibge = data["ibge"];
+    String ddd = data["ddd"];
 
   }
 

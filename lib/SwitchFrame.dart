@@ -1,3 +1,4 @@
+import 'package:economiz/GetApiFrame.dart';
 import 'package:economiz/RadioButtonFrame.dart';
 import 'package:flutter/material.dart';
 
@@ -188,7 +189,15 @@ class _SwitchFrameState extends State<SwitchFrame> {
                 padding: EdgeInsets.only(top: 5, bottom: 2),
                 child: RaisedButton(
                   padding: EdgeInsets.all(14),
-                    onPressed: (){},
+                    onPressed: (){
+                      var infoCep = "Informe o CEP no campo de texto!";
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => GetApiFrame(),
+                        ),
+                    );
+                    },
                   color: primeColor,
                     child: Text(
                         "Configurar CEP",

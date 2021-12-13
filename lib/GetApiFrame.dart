@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 class GetApiFrame extends StatefulWidget {
 
@@ -20,13 +21,14 @@ class _GetApiFrameState extends State<GetApiFrame> {
   var receptorText = "";
   var _dinamicText = "";
 
-  void _dadosApi () async {
+  void _ApiData () async {
 
     http.Response response;
     var cep = "01001000";
     var url = Uri.parse("https://viacep.com.br/ws/${cep}/json/");
 
     response = await http.get(url);
+
 
   }
 
@@ -91,7 +93,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
                   padding: EdgeInsets.only(top:7),
                 child: RaisedButton(
                   padding: EdgeInsets.all(14),
-                    onPressed: _dadosApi,
+                    onPressed: _ApiData,
                   color: primeColor,
                   child: Text(
                     "Verificar",

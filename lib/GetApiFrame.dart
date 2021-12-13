@@ -19,6 +19,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: supportingColor,
       body: Container(
         width: double.infinity,
         child:SingleChildScrollView(

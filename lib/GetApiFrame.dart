@@ -17,6 +17,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
   TextEditingController _controllerCEP = TextEditingController();
 
   var receptorText = "";
+  var _dinamicText = "";
 
   @override
   Widget build(BuildContext context) {
@@ -72,9 +73,24 @@ class _GetApiFrameState extends State<GetApiFrame> {
                   maxLength: 8,
                   maxLengthEnforced: true,
                   controller: _controllerCEP,
-
                 ),
               ),
+              Padding(
+                  padding: EdgeInsets.only(top:3),
+                child: RaisedButton(
+                  padding: EdgeInsets.all(14),
+                    onPressed: (){},
+                  color: primeColor,
+                  child: Text(
+                    "Verificar",
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600,
+                      color: supportingColor,
+                    ),
+                  ),
+                ),
+              )
             ],
           ),
         ),

@@ -28,6 +28,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
         child:SingleChildScrollView(
           padding: EdgeInsets.all(28),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Padding(
                   padding: EdgeInsets.only(top: 16),
@@ -76,7 +77,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
                 ),
               ),
               Padding(
-                  padding: EdgeInsets.only(top:2),
+                  padding: EdgeInsets.only(top:7),
                 child: RaisedButton(
                   padding: EdgeInsets.all(14),
                     onPressed: (){},

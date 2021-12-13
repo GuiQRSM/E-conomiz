@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
+import 'package:http/http.dart' as http;
 
 class GetApiFrame extends StatefulWidget {
 
@@ -22,7 +22,9 @@ class _GetApiFrameState extends State<GetApiFrame> {
 
   void _dadosApi () {
 
-
+    http.Response response;
+    var cep = "01001000";
+    var url = Uri.parse("https://viacep.com.br/ws/${cep}/json/");
 
   }
 

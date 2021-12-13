@@ -14,6 +14,8 @@ const supportingColor = Color.fromRGBO(246, 203, 237, 1);
 
 class _GetApiFrameState extends State<GetApiFrame> {
 
+  TextEditingController _controllerCEP = TextEditingController();
+
   var receptorText = "";
 
   @override
@@ -60,7 +62,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
                   cursorColor: primeColor,
                   maxLength: 8,
                   maxLengthEnforced: true,
-                  //controller: ,
+                  controller: _controllerCEP,
                 ),
               ),
             ],

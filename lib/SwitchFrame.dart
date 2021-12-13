@@ -194,7 +194,7 @@ class _SwitchFrameState extends State<SwitchFrame> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => GetApiFrame(),
+                            builder: (context) => GetApiFrame(getInfo: '$infoCep',),
                         ),
                     );
                     },

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class GetApiFrame extends StatefulWidget {
-  const GetApiFrame({Key? key}) : super(key: key);
+
+  String getInfo;
+  GetApiFrame({required this.getInfo});
 
   @override
   _GetApiFrameState createState() => _GetApiFrameState();

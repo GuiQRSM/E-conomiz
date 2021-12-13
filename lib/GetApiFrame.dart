@@ -45,6 +45,14 @@ class _GetApiFrameState extends State<GetApiFrame> {
                      "DDD: ${ddd}";
     });
 
+    _cleanField();
+
+  }
+
+  void _cleanField() {
+
+    _controllerCEP.text = "";
+
   }
 
   @override

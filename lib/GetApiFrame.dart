@@ -36,6 +36,15 @@ class _GetApiFrameState extends State<GetApiFrame> {
     String ibge = data["ibge"];
     String ddd = data["ddd"];
 
+    setState(() {
+      _dinamicText = "Logradouro: ${logradouro}\n"
+                     "Bairro: ${bairro}\n"
+                     "Localidade: ${localidade}\n"
+                     "UF: ${uf}\n"
+                     "IBGE: ${ibge}\n"
+                     "DDD: ${ddd}";
+    });
+
   }
 
   @override

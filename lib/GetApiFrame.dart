@@ -19,6 +19,12 @@ class _GetApiFrameState extends State<GetApiFrame> {
   var receptorText = "";
   var _dinamicText = "";
 
+  void _dadosApi () {
+
+
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,7 +86,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
                   padding: EdgeInsets.only(top:7),
                 child: RaisedButton(
                   padding: EdgeInsets.all(14),
-                    onPressed: (){},
+                    onPressed: _dadosApi,
                   color: primeColor,
                   child: Text(
                     "Verificar",

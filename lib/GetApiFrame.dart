@@ -28,7 +28,7 @@ class _GetApiFrameState extends State<GetApiFrame> {
     var url = Uri.parse("https://viacep.com.br/ws/${cep}/json/");
 
     response = await http.get(url);
-
+    Map<String, dynamic> data = json.decode(response.body);
 
   }
 

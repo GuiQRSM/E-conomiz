@@ -9,6 +9,9 @@ class GetApiFrame extends StatefulWidget {
   _GetApiFrameState createState() => _GetApiFrameState();
 }
 
+const primeColor = Color.fromARGB(255, 98, 0, 238);
+const supportingColor = Color.fromRGBO(246, 203, 237, 1);
+
 class _GetApiFrameState extends State<GetApiFrame> {
 
   var receptorText = "";

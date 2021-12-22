@@ -50,6 +50,12 @@ class _ReceiverListState extends State<ReceiverList> {
           color: supportingColor,
         ),
       ),
+      body: FutureBuilder<List<Receiver>>(
+        future: _getDataList(),
+        builder: (comtext, snapshot) {
+
+        },
+      ),
     );
   }
 }

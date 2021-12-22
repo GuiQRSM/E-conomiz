@@ -72,6 +72,9 @@ class _ReceiverListState extends State<ReceiverList> {
                   itemCount: snapshot.data!.length,
                   itemBuilder: (context, index){
 
+                    List<Receiver> items = snapshot.data!;
+                    Receiver show = items[index];
+
                     return ListTile(
                       title: Text(
                           "teste",

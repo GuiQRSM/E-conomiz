@@ -13,6 +13,11 @@ var primeColor = Color.fromARGB(255, 98, 0, 238);
 var supportingColor = Color.fromRGBO(246, 203, 237, 1);
 
 class _ReceiverListState extends State<ReceiverList> {
+
+  void _getDataList() async {
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold();

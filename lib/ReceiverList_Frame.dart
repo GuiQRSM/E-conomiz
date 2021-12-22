@@ -1,3 +1,4 @@
+import 'package:economiz/Receiver_Class.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'dart:convert';
@@ -14,7 +15,7 @@ var supportingColor = Color.fromRGBO(246, 203, 237, 1);
 
 class _ReceiverListState extends State<ReceiverList> {
 
-  void _getDataList() async {
+  Future<List<Receiver>> _getDataList() async {
 
   }
 

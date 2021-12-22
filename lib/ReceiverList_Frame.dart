@@ -77,7 +77,9 @@ class _ReceiverListState extends State<ReceiverList> {
 
                     return ListTile(
                       title: Text(
-                          "teste",
+                          "Groupie: ${show.group.toString()};\n"
+                        "ID: ${show.id.toString()};\n"
+                        "Title: ${show.title.toString()};",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
@@ -85,7 +87,7 @@ class _ReceiverListState extends State<ReceiverList> {
                         ),
                       ),
                       subtitle: Text(
-                          "teste",
+                          "info: ${show.body.toString()}",
                       style: TextStyle(
                           fontSize: 17,
                           fontWeight: FontWeight.w400,

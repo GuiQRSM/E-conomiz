@@ -73,8 +73,21 @@ class _ReceiverListState extends State<ReceiverList> {
                   itemBuilder: (context, index){
 
                     return ListTile(
-                      title: Text("teste"),
-                      subtitle: Text("teste"),
+                      title: Text(
+                          "teste",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600,
+                          color: primeColor
+                        ),
+                      ),
+                      subtitle: Text(
+                          "teste",
+                      style: TextStyle(
+                          fontSize: 17,
+                          fontWeight: FontWeight.w400,
+                          color: primeColor
+                      ),),
                     );
 
                   },

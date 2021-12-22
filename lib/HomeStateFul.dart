@@ -187,6 +187,23 @@ class _HomeStateFulState extends State<HomeStateFul> {
                   ),),
                 ),
               ),
+              //BOTAO PARA ACIONAR A TELA QUE EXIBE UMA LISTA QUE CARREGA DADOS DE UMA API\\
+              Padding(
+                padding: EdgeInsets.only(top: 10),
+                child: RaisedButton(
+                  onPressed: (){},
+                  padding: EdgeInsets.all(16),
+                  color: primeColor,
+                  textColor: supportingColor,
+                  child: Text(
+                    "Lista de dados da Web",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),

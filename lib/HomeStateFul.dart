@@ -5,6 +5,7 @@ import 'package:economiz/SwitchFrame.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+
 class HomeStateFul extends StatefulWidget {
   const HomeStateFul({Key? key}) : super(key: key);
 
@@ -155,6 +156,16 @@ class _HomeStateFulState extends State<HomeStateFul> {
                   ),
                 ),),
               Padding(
+                padding: EdgeInsets.only(top: 10),
+                child: Text(
+                  "$_text",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                    color: primeColor,
+                  ),),),
+              Padding(
                   padding: EdgeInsets.only(top: 10,),
                 child: RaisedButton(
                     onPressed: (){
@@ -176,16 +187,6 @@ class _HomeStateFulState extends State<HomeStateFul> {
                   ),),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 20),
-              child: Text(
-                  "$_text",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                color: primeColor,
-              ),),)
             ],
           ),
         ),

@@ -1,0 +1,131 @@
+[33mcommit 3598d6181c2836dd22faefeb68401cd6d870d04a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Fri Nov 19 15:18:09 2021 -0300
+
+    Implement Adeconomiz.png image file inside the 'images' folder.
+
+[33mcommit 8827f2c3d8d2a49ce23128d79a95221ab94539e0[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Fri Nov 19 13:48:55 2021 -0300
+
+    Declares _callEasterEgg(){} method after the 'onLongPres:' attribute.
+
+[33mcommit a2d895bee67be08146ed7517ba44dd2d4ad5a0ca[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Fri Nov 19 13:44:25 2021 -0300
+
+    Implements the _calEasterEgg(){} method.
+
+[33mcommit 33e61d76d3c84c42e3575a3c10f891235df240da[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Fri Nov 19 13:41:14 2021 -0300
+
+    Implements two Padding() classes to the body.
+
+[33mcommit 61cdde4d429d9449759395eba95808e4877c4508[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Fri Nov 19 13:28:31 2021 -0300
+
+    Set the 'padding:' attribute of the Paddiing() class to .only
+
+[33mcommit 4e074d460d2956ae4757510aadb7f6a3e6cd1253[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Wed Nov 17 17:24:58 2021 -0300
+
+    implements the attributes:
+
+[33mcommit e448db00505c34219879ee541f1e88911fbbbabd[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Wed Nov 17 16:59:26 2021 -0300
+
+    Implements the GestureDetector() class, inside the 'body:,' attribute to configure a widget change on a click event.
+
+[33mcommit b345fcdaafc7414124c583ff7930388900e16beb[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Wed Nov 17 16:55:47 2021 -0300
+
+    Configure the 'E-conomiz.png' image file inside the pubspec.yaml folder
+
+[33mcommit b767b2bbbc423c5c8e736babd07b18f1e57ce8f9[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Wed Nov 17 16:53:05 2021 -0300
+
+    Add the image file 'E-conomiz.png' into the images folder.
+
+[33mcommit 7de41d7e2eba7b9a80339b6d48b6a3f814e8a986[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Tue Nov 16 17:55:32 2021 -0300
+
+    Move the entire structure of the stful HomeStateFul into the created Dart.file and instantiate this class inside the MaterialApp() home attribute in main.dart.
+
+[33mcommit d6f71f2fb5fa10eea03b743a60dce4bbcd0da91e[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Tue Nov 16 17:50:32 2021 -0300
+
+    Implement inside the lib folder a Dart.file named HomeStateFul
+
+[33mcommit 8ba7f2fec81f150858678f6602dbc44c8cf0e092[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Tue Nov 16 15:29:09 2021 -0300
+
+    Calls the method 'callContent(){}' inside the onPressed of RaisedBotton().
+
+[33mcommit 0b6246c44db23991490f1726ca17fa68277deb53[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Tue Nov 16 15:26:19 2021 -0300
+
+    change the structure of the 'callContent(){}' method
+
+[33mcommit ea383af02d68436338a80d9fcf52cd170432f641[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Tue Nov 16 15:22:23 2021 -0300
+
+    implements the vector 'var content', and implements the method 'callContent(){}'.
+
+[33mcommit c3a18c81093ac8a6b846c286b19d399cb66caebe[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Tue Nov 16 15:09:06 2021 -0300
+
+    Implement a mainAxisAlignment.center and enable a layout response to any screen with the 'width: double.infinity'.
+
+[33mcommit 9578fb73a3593a8c59b4909a2dd1fc84033c4265[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Fri Nov 12 17:45:05 2021 -0300
+
+    Implement a SetStateful Widget to change values, in triggers of a RaisedBotton.
+
+[33mcommit c04ea74150697273574c63b1e8796c1648780a4c[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Thu Nov 11 17:24:05 2021 -0300
+
+    Implements a base layout structure using the Scaffold() class.
+
+[33mcommit 3a61946c48f4fc1daa5274904f97977d06ba3eb9[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Wed Nov 10 16:54:08 2021 -0300
+
+    implements text formatting and visual content alignments.
+
+[33mcommit fb2e94af91cc76ad651b38ef44b63e331734eb76[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Wed Nov 10 16:26:31 2021 -0300
+
+    Imports material.dart, and adds a Container.
+
+[33mcommit 6ee8ad80dc8e4320aa508f6a4d8ad50c2644febd[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Wed Nov 10 16:02:22 2021 -0300
+
+    Deletes widgets folder from the default project.
+
+[33mcommit 1139213b771cec98f38b4fd0e0f939688437507e[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Wed Nov 10 16:00:33 2021 -0300
+
+    Configure .gitignore
+
+[33mcommit e23f8b932af66e88c2e890cc22e29fffc657639c[m
+Author: GuiQRSM <endbeob15@gmail.com>
+Date:   Wed Nov 10 15:57:14 2021 -0300
+
+    Project start.

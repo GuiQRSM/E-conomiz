@@ -23,8 +23,11 @@ class _ReceiverListState extends State<ReceiverList> {
 
     var dataJson = json.decode(response.body);
 
+    List<Receiver> listGet = [];
     for(var runner in dataJson){
 
+      Receiver inst = Receiver(runner["userId"], runner["id"], runner["title"], runner["body"]);
+      
     }
 
   }

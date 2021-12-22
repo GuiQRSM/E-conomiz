@@ -23,6 +23,10 @@ class _ReceiverListState extends State<ReceiverList> {
 
     var dataJson = json.decode(response.body);
 
+    for(var runner in dataJson){
+
+    }
+
   }
 
   @override

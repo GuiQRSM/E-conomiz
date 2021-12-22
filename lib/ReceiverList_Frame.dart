@@ -54,6 +54,23 @@ class _ReceiverListState extends State<ReceiverList> {
         future: _getDataList(),
         builder: (comtext, snapshot) {
 
+          switch(snapshot.connectionState){
+            case ConnectionState.waiting :
+              print("");
+              break;
+            case ConnectionState.done :
+              if(snapshot.hasError){
+                print("Erro ao carregar dados!");
+              }else{
+                return ListView.builder(
+                  itemCount: ,
+                  itemBuilder: (){
+
+                  },
+                );
+              }
+          }
+
         },
       ),
     );

@@ -1,6 +1,7 @@
 
 
 import 'package:economiz/CheckBoxFrame.dart';
+import 'package:economiz/ReceiverList_Frame.dart';
 import 'package:economiz/SwitchFrame.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
@@ -191,7 +192,14 @@ class _HomeStateFulState extends State<HomeStateFul> {
               Padding(
                 padding: EdgeInsets.only(top: 10),
                 child: RaisedButton(
-                  onPressed: (){},
+                  onPressed: (){
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ReceiverList(),
+                        ),
+                    );
+                  },
                   padding: EdgeInsets.all(16),
                   color: primeColor,
                   textColor: supportingColor,

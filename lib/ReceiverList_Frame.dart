@@ -9,6 +9,9 @@ class ReceiverList extends StatefulWidget {
   _ReceiverListState createState() => _ReceiverListState();
 }
 
+var primeColor = Color.fromARGB(255, 98, 0, 238);
+var supportingColor = Color.fromRGBO(246, 203, 237, 1);
+
 class _ReceiverListState extends State<ReceiverList> {
   @override
   Widget build(BuildContext context) {

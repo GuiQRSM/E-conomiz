@@ -21,6 +21,8 @@ class _ReceiverListState extends State<ReceiverList> {
     var url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
     response = await http.get(url);
 
+    var dataJson = json.decode(response.body);
+
   }
 
   @override

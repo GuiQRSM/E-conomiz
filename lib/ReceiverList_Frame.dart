@@ -37,6 +37,19 @@ class _ReceiverListState extends State<ReceiverList> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: supportingColor,
+      appBar: AppBar(
+        backgroundColor: primeColor,
+        title: Text(
+            "Lista de dados(Web)",
+        style: TextStyle(
+          color: supportingColor,
+        ),),
+        iconTheme: IconThemeData(
+          color: supportingColor,
+        ),
+      ),
+    );
   }
 }

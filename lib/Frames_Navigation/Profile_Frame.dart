@@ -13,6 +13,17 @@ const supportingColor = Color.fromRGBO(246, 203, 237, 1);
 class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: Text(
+          "Perfil",
+          style: TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.w600,
+            color: primeColor,
+          ),
+        ),
+      ),
+    );
   }
 }

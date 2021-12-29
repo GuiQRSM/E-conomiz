@@ -13,6 +13,17 @@ const supportingColor = Color.fromRGBO(246, 203, 237, 1);
 class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: Text(
+          "Buscar",
+          style: TextStyle(
+            fontSize: 26,
+            fontWeight: FontWeight.w600,
+            color: primeColor,
+          ),
+        ),
+      ),
+    );
   }
 }

@@ -63,9 +63,15 @@ class _MainNavigationState extends State<MainNavigation> {
             icon: Icon(
               Icons.search_rounded,
               color: supportingColor,
-            )
+            ),
           ),
-
+          BottomNavigationBarItem(
+            title: Text("Lista"),
+            icon: Icon(
+              Icons.article_rounded,
+              color: supportingColor,
+            ),
+          ),
         ],
       ),
     );

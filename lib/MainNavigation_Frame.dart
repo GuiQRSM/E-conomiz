@@ -9,6 +9,7 @@ class MainNavigation extends StatefulWidget {
 
 const primeColor = Color.fromARGB(255, 98, 0, 238);
 const supportingColor = Color.fromRGBO(246, 203, 237, 1);
+var _actualIndex;
 
 class _MainNavigationState extends State<MainNavigation> {
   @override

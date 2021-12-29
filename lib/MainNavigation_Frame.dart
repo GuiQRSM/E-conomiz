@@ -46,6 +46,7 @@ class _MainNavigationState extends State<MainNavigation> {
       ),
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: primeColor,
         items: [
           BottomNavigationBarItem(
             title: Text(

@@ -1,3 +1,7 @@
+import 'package:economiz/Frames_Navigation/Inicial_Frame.dart';
+import 'package:economiz/Frames_Navigation/List_Frame.dart';
+import 'package:economiz/Frames_Navigation/Profile_Frame.dart';
+import 'package:economiz/Frames_Navigation/Search_Frame.dart';
 import 'package:flutter/material.dart';
 
 class MainNavigation extends StatefulWidget {
@@ -16,7 +20,10 @@ class _MainNavigationState extends State<MainNavigation> {
   Widget build(BuildContext context) {
 
     List<Widget> frames = [
-
+      HomeStateFul(),
+      Search(),
+      Lista(),
+      Profile()
     ];
 
     return Scaffold(

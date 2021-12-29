@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class List extends StatefulWidget {
-  const List({Key? key}) : super(key: key);
+class Lista extends StatefulWidget {
+  const Lista({Key? key}) : super(key: key);
 
   @override
   _ListState createState() => _ListState();
@@ -10,7 +10,7 @@ class List extends StatefulWidget {
 const primeColor = Color.fromARGB(255, 98, 0, 238);
 const supportingColor = Color.fromRGBO(246, 203, 237, 1);
 
-class _ListState extends State<List> {
+class _ListState extends State<Lista> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -58,6 +58,14 @@ class _MainNavigationState extends State<MainNavigation> {
               color: supportingColor,
             ),
           ),
+          BottomNavigationBarItem(
+            title: Text("Buscar"),
+            icon: Icon(
+              Icons.search_rounded,
+              color: supportingColor,
+            )
+          ),
+
         ],
       ),
     );

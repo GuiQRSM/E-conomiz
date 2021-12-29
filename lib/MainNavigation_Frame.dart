@@ -14,6 +14,11 @@ var _actualIndex = 4;
 class _MainNavigationState extends State<MainNavigation> {
   @override
   Widget build(BuildContext context) {
+
+    List<Widget> frames = [
+
+    ];
+
     return Scaffold(
       backgroundColor: supportingColor,
       appBar: AppBar(

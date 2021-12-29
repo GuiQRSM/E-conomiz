@@ -19,13 +19,6 @@ const supportingColor = Color.fromRGBO(246, 203, 237, 1);
 
 class _HomeStateFulState extends State<HomeStateFul> {
 
-  var _content = [
-    "Pesquise preços sem sair de casa!",
-    "Monte sua lista de compras direto no app.",
-    "Atualização de preços, da sua lista automatica!",
-    "Compartilhe os melhores preços."
-  ];
-
   var _text = "";
 
   TextEditingController _controllerFirst = TextEditingController();
@@ -77,10 +70,6 @@ class _HomeStateFulState extends State<HomeStateFul> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: supportingColor,
-      appBar: AppBar(
-        title: Text("E-conomiz"),
-        backgroundColor: primeColor,
-      ),
       body: Container(
         width: double.infinity,
         child: SingleChildScrollView(

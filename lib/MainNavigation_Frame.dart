@@ -87,6 +87,18 @@ class _MainNavigationState extends State<MainNavigation> {
               color: supportingColor,
             ),
           ),
+          BottomNavigationBarItem(
+            title: Text(
+                "Perfil",
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                color: supportingColor,
+              ),),
+            icon: Icon(
+              Icons.account_circle_rounded,
+              color: supportingColor,
+            )
+          )
         ],
       ),
     );

@@ -9,7 +9,7 @@ class MainNavigation extends StatefulWidget {
 
 const primeColor = Color.fromARGB(255, 98, 0, 238);
 const supportingColor = Color.fromRGBO(246, 203, 237, 1);
-var _actualIndex;
+var _actualIndex = 4;
 
 class _MainNavigationState extends State<MainNavigation> {
   @override
@@ -50,6 +50,11 @@ class _MainNavigationState extends State<MainNavigation> {
         backgroundColor: primeColor,
         fixedColor: supportingColor,
         type: BottomNavigationBarType.fixed,
+        onTap: (index) {
+          setState(() {
+            _actualIndex = index;
+          });
+        },
         currentIndex: _actualIndex,
         items: [
           BottomNavigationBarItem(

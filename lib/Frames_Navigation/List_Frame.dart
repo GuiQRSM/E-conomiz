@@ -7,6 +7,9 @@ class List extends StatefulWidget {
   _ListState createState() => _ListState();
 }
 
+const primeColor = Color.fromARGB(255, 98, 0, 238);
+const supportingColor = Color.fromRGBO(246, 203, 237, 1);
+
 class _ListState extends State<List> {
   @override
   Widget build(BuildContext context) {

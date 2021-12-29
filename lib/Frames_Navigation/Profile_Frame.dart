@@ -7,6 +7,9 @@ class Profile extends StatefulWidget {
   _ProfileState createState() => _ProfileState();
 }
 
+const primeColor = Color.fromARGB(255, 98, 0, 238);
+const supportingColor = Color.fromRGBO(246, 203, 237, 1);
+
 class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {

@@ -59,6 +59,10 @@ class _GetApiFrameState extends State<GetApiFrame> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: supportingColor,
+      appBar: AppBar(
+        title: Text("E-conomiz"),
+        backgroundColor: primeColor,
+      ),
       body: Container(
         width: double.infinity,
         child:SingleChildScrollView(

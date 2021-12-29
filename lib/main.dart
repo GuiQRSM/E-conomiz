@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:economiz/Inicial_Content/CheckBoxFrame.dart';
-import 'package:economiz/Inicial_Frame.dart';
+import 'package:economiz/Frames_Navigation/Inicial_Frame.dart';
 import 'package:economiz/Inicial_Content/RadioButtonFrame.dart';
 import 'package:economiz/Inicial_Content/SwitchFrame.dart';
 import 'package:flutter/cupertino.dart';

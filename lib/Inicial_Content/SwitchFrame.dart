@@ -224,49 +224,6 @@ class _SwitchFrameState extends State<SwitchFrame> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        color: primeColor,
-        child: Padding(
-          padding: EdgeInsets.all(14),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              Text(
-                "b1",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.white,
-                ),
-              ),
-              Text(
-                "b2",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.white,
-                ),
-              ),
-              Text(
-                "b3",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.white,
-                ),
-              ),
-              Text(
-                "b4",
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.white,
-                ),
-              )
-            ],
-          ),
-        ),
-      ),
     );
   }
 }

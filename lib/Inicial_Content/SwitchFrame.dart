@@ -1,5 +1,5 @@
-import 'package:economiz/GetApiFrame.dart';
-import 'package:economiz/RadioButtonFrame.dart';
+import 'package:economiz/Inicial_Content/GetApiFrame.dart';
+import 'package:economiz/Inicial_Content/RadioButtonFrame.dart';
 import 'package:flutter/material.dart';
 
 class SwitchFrame extends StatefulWidget {

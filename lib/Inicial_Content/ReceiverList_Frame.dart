@@ -1,4 +1,4 @@
-import 'package:economiz/Receiver_Class.dart';
+import 'package:economiz/Inicial_Content/Receiver_Class.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';

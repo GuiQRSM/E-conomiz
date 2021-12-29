@@ -1,8 +1,8 @@
 import 'dart:ui';
-import 'package:economiz/CheckBoxFrame.dart';
+import 'package:economiz/Inicial_Content/CheckBoxFrame.dart';
 import 'package:economiz/Inicial_Frame.dart';
-import 'package:economiz/RadioButtonFrame.dart';
-import 'package:economiz/SwitchFrame.dart';
+import 'package:economiz/Inicial_Content/RadioButtonFrame.dart';
+import 'package:economiz/Inicial_Content/SwitchFrame.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

@@ -1,8 +1,8 @@
 
 
-import 'package:economiz/CheckBoxFrame.dart';
-import 'package:economiz/ReceiverList_Frame.dart';
-import 'package:economiz/SwitchFrame.dart';
+import 'package:economiz/Inicial_Content/CheckBoxFrame.dart';
+import 'package:economiz/Inicial_Content/ReceiverList_Frame.dart';
+import 'package:economiz/Inicial_Content/SwitchFrame.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 

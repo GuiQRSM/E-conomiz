@@ -45,6 +45,11 @@ class _MainNavigationState extends State<MainNavigation> {
         ],
       ),
       body: Container(),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+
+        ],
+      ),
     );
   }
 }

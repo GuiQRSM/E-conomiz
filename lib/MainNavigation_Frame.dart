@@ -57,7 +57,7 @@ class _MainNavigationState extends State<MainNavigation> {
           ),
         ],
       ),
-      body: Container(),
+      body: frames[_actualIndex],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: primeColor,
         fixedColor: supportingColor,

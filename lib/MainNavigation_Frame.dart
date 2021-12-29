@@ -47,7 +47,17 @@ class _MainNavigationState extends State<MainNavigation> {
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-
+          BottomNavigationBarItem(
+            title: Text(
+                "Início",
+            style: TextStyle(
+              fontWeight: FontWeight.w700,
+            ),),
+            icon: Icon(
+              Icons.home,
+              color: supportingColor,
+            ),
+          ),
         ],
       ),
     );

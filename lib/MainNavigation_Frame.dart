@@ -48,6 +48,7 @@ class _MainNavigationState extends State<MainNavigation> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: primeColor,
         fixedColor: supportingColor,
+        type: BottomNavigationBarType.fixed,
         currentIndex: 1,
         items: [
           BottomNavigationBarItem(

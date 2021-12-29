@@ -14,6 +14,7 @@ class _MainNavigationState extends State<MainNavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: supportingColor,
       appBar: AppBar(
         backgroundColor: primeColor,
         title: Text(
@@ -43,6 +44,7 @@ class _MainNavigationState extends State<MainNavigation> {
           ),
         ],
       ),
+      body: Container(),
     );
   }
 }

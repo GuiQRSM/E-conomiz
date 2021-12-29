@@ -1,5 +1,3 @@
-
-
 import 'package:economiz/Inicial_Content/CheckBoxFrame.dart';
 import 'package:economiz/Inicial_Content/ReceiverList_Frame.dart';
 import 'package:economiz/Inicial_Content/SwitchFrame.dart';

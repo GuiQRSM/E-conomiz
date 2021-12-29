@@ -14,6 +14,7 @@ class _ListState extends State<Lista> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: supportingColor,
       body: Center(
         child: Text(
           "Lista",

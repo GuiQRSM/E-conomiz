@@ -30,7 +30,11 @@ class _SwitchFrameState extends State<SwitchFrame> {
     return Scaffold(
       backgroundColor: supportingColor,
       appBar: AppBar(
-        title: Text("E-conomiz"),
+        title: Text(
+            "E-conomiz",
+        style: TextStyle(
+          color: supportingColor,
+        ),),
         backgroundColor: primeColor,
       ),
       body: Container(

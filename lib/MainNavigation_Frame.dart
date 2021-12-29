@@ -47,12 +47,14 @@ class _MainNavigationState extends State<MainNavigation> {
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: primeColor,
+        fixedColor: supportingColor,
         items: [
           BottomNavigationBarItem(
             title: Text(
                 "Início",
             style: TextStyle(
               fontWeight: FontWeight.w700,
+              color: supportingColor
             ),),
             icon: Icon(
               Icons.home,
@@ -60,14 +62,24 @@ class _MainNavigationState extends State<MainNavigation> {
             ),
           ),
           BottomNavigationBarItem(
-            title: Text("Buscar"),
+            title: Text(
+                "Buscar",
+            style: TextStyle(
+              fontWeight: FontWeight.w700,
+              color: supportingColor,
+            ),),
             icon: Icon(
               Icons.search_rounded,
               color: supportingColor,
             ),
           ),
           BottomNavigationBarItem(
-            title: Text("Lista"),
+            title: Text(
+                "Lista",
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                color: supportingColor,
+              ),),
             icon: Icon(
               Icons.article_rounded,
               color: supportingColor,

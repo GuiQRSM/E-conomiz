@@ -79,7 +79,7 @@ class _HomeStateFulState extends State<HomeStateFul> {
   @override
   Widget build(BuildContext context) {
 
-    print("Terceiro método:  build(BuildContext context)");
+    print("Terceiro método:  build(BuildContext context).");
 
     return Scaffold(
       backgroundColor: supportingColor,
@@ -219,5 +219,11 @@ class _HomeStateFulState extends State<HomeStateFul> {
         ),
       ),
     );
+  }
+  @override
+  void dispose() {
+    super.dispose();
+    print("Quarto método: dispose().");
+
   }
 }

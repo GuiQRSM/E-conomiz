@@ -77,6 +77,12 @@ class _HomeStateFulState extends State<HomeStateFul> {
   }
 
   @override
+  void didUpdateWidget(covariant HomeStateFul oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    print("Funciona entre o segundo e o terceiro método: didUpdateWidget(covariant HomeStateFul oldWidget).");
+  }
+
+  @override
   Widget build(BuildContext context) {
 
     print("Terceiro método:  build(BuildContext context).");

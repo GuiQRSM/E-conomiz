@@ -78,6 +78,9 @@ class _HomeStateFulState extends State<HomeStateFul> {
 
   @override
   Widget build(BuildContext context) {
+
+    print("Terceiro método:  build(BuildContext context)");
+
     return Scaffold(
       backgroundColor: supportingColor,
       body: Container(

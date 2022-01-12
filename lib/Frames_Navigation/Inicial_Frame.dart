@@ -64,7 +64,11 @@ class _HomeStateFulState extends State<HomeStateFul> {
 
   }
 
-
+ @override
+  void initState() {
+    super.initState();
+    print("Primeiro método: initState()");
+  }
 
   @override
   Widget build(BuildContext context) {

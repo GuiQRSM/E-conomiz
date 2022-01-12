@@ -67,7 +67,13 @@ class _HomeStateFulState extends State<HomeStateFul> {
  @override
   void initState() {
     super.initState();
-    print("Primeiro método: initState()");
+    print("Primeiro método: initState().");
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    print("Segundo método: didChangeDependencies().");
   }
 
   @override
